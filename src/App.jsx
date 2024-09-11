@@ -18,8 +18,8 @@ function App() {
     event.preventDefault();
 
     try {
-      const API = import.meta.env.PUBLIC_API_URL;
-      const url = `${API}/photos`;
+      //const API = import.meta.env.PUBLIC_API_URL;
+      //const url = `${API}/photos`;
       const response = await axios.get("https://photos-api-6fyp.onrender.com/photos", { params: { searchQuery: searchQuery } });
       console.log(response.data)
       setPhotos(response.data);
